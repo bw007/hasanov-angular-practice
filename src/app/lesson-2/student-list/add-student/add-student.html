@@ -1,0 +1,22 @@
+<div class="flex flex-col gap-2 p-4 bg-white w-lg border border-gray-300">
+  <p class="text-lg text-gray-700 font-medium">Add student</p>
+  <div class="flex items-center justify-between gap-1.5">
+    <input
+      placeholder="Student name"
+      [(ngModel)]="name"
+      class="border text-sm border-gray-300 rounded h-8 outline-none w-full px-2.5 py-1"
+    />
+    <input
+      type="number"
+      placeholder="Score"
+      [(ngModel)]="score"
+      class="border text-sm border-gray-300 h-8 rounded outline-none w-20 px-2 py-1"
+    />
+    <button
+      (click)="add()"
+      class="px-2.5 py-1 border rounded border-green-500 h-8 bg-green-500 text-white text-sm active:opacity-85 hover:bg-green-600 cursor-pointer"
+    >
+      Add
+    </button>
+  </div>
+</div>
